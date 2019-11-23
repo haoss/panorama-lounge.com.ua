@@ -1,0 +1,112 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Контакты' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Контакты' + ' - Panorama' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body.body--document
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header
+    .header-separator
+    
+    // Content
+    .content
+      
+      // Section
+      .section.no--p-bottom
+        .container
+          
+          .section__head
+            div
+              .h1 Контакты
+                small
+                  a(href="#!") 
+                    i.fa.fa-angle-left
+                    | Вернуться назад
+                    
+          .section__content.section__content--contacts
+            .row
+              .col-sm-4
+                .contacts__block
+                  i.fa.fa-map-marker
+                  h4 Адрес
+                  p г. Харьков, 
+                    br
+                    | пер. Костюринский, 2
+                    br
+                    | ТРЦ Palladium
+                    
+              .col-sm-4
+                .contacts__block
+                  i.fa.fa-phone
+                  h4 Телефон
+                  p +38 (050) 344-29-15
+                    br
+                    | +38 (057) 731-10-02   
+                    
+              .col-sm-4
+                .contacts__block
+                  i.fa.fa-clock-o
+                  h4 Время работы
+                  p Мы работаем 24/7
+              
+      // Section
+      .section.section--map
+        .container
+          
+          #map_canvas.contacts__map.contacts__map--document
+          
+          // Google Map
+          script(src='https://maps.googleapis.com/maps/api/js?sensor=false')
+          script.
+            function initialize() {
+              var myLatlng = new google.maps.LatLng(49.9877839,36.2340847);
+              var map_options = {
+                zoom: 16,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                center: myLatlng,
+                scrollwheel: false,
+                disableDefaultUI: true
+              }
+              var map = new google.maps.Map(document.getElementById('map_canvas'), map_options)
+              var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map
+              });
+              /* Remove if you dont want B/W Google Map */
+              /*
+              var styles = [
+              {
+              featureType: "all",
+              stylers: [
+              { saturation: -100 }
+              ]
+              }
+              ];
+              map.setOptions({styles: styles});
+              */
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+          // Google Map Ends!
+
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    include ./_include/_js-body-bottom

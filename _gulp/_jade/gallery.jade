@@ -1,0 +1,145 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Галерея папок' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Галерея папок' + ' - Panorama' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body.body--document
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header
+    .header-separator
+    
+    // Content
+    .content.content--gallery
+      
+      .section.gallery-list
+        .container
+                
+          .section__head.section__head--white
+            div
+              .h1 Фотогалерея
+                small
+                  a(href="#!") 
+                    i.fa.fa-angle-left
+                    | Вернуться назад
+          
+          .gallery__row.row
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block
+                a(href="#")
+                  img(src="./img/gallery-list-1.png", alt="").img-responsive
+                  figcaption 08.04.2017 
+                    br
+                    | Каникулы VKLYBE.TV - 2017
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block
+                a(href="#")
+                  img(src="./img/gallery-list-2.png", alt="").img-responsive
+                  figcaption 08.04.2017 
+                    br
+                    | Каникулы VKLYBE.TV - 2017
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block
+                a(href="#")
+                  img(src="./img/gallery-list-3.png", alt="").img-responsive
+                  figcaption 08.04.2017 
+                    br
+                    | Каникулы VKLYBE.TV - 2017
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block
+                a(href="#")
+                  img(src="./img/gallery-list-1.png", alt="").img-responsive
+                  figcaption 08.04.2017 
+                    br
+                    | Каникулы VKLYBE.TV - 2017
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block
+                a(href="#")
+                  img(src="./img/gallery-list-2.png", alt="").img-responsive
+                  figcaption 08.04.2017 
+                    br
+                    | Каникулы VKLYBE.TV - 2017
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block
+                a(href="#")
+                  img(src="./img/gallery-list-3.png", alt="").img-responsive
+                  figcaption 08.04.2017 
+                    br
+                    | Каникулы VKLYBE.TV - 2017
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block
+                a(href="#")
+                  img(src="./img/gallery-list-1.png", alt="").img-responsive
+                  figcaption 08.04.2017 
+                    br
+                    | Каникулы VKLYBE.TV - 2017
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block
+                a(href="#")
+                  img(src="./img/gallery-list-2.png", alt="").img-responsive
+                  figcaption 08.04.2017 
+                    br
+                    | Каникулы VKLYBE.TV - 2017
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block
+                a(href="#")
+                  img(src="./img/gallery-list-3.png", alt="").img-responsive
+                  figcaption 08.04.2017 
+                    br
+                    | Каникулы VKLYBE.TV - 2017
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block
+                a(href="#")
+                  img(src="./img/gallery-list-1.png", alt="").img-responsive
+                  figcaption 08.04.2017 
+                    br
+                    | Каникулы VKLYBE.TV - 2017
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block
+                a(href="#")
+                  img(src="./img/gallery-list-2.png", alt="").img-responsive
+                  figcaption 08.04.2017 
+                    br
+                    | Каникулы VKLYBE.TV - 2017
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block
+                a(href="#")
+                  img(src="./img/gallery-list-3.png", alt="").img-responsive
+                  figcaption 08.04.2017 
+                    br
+                    | Каникулы VKLYBE.TV - 2017
+              
+          // Pagination
+          .pagination
+            ul
+              li.prev
+                a(href="#!")
+                  i.fa.fa-angle-left
+              li.active
+                a(href="#!") 1
+              li
+                a(href="#!") 2
+              li.next
+                a(href="#!")
+                  i.fa.fa-angle-right
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    include ./_include/_js-body-bottom

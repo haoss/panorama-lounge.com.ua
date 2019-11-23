@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Контакты - Panorama</title>
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="./js/libs/magnific-popup/magnific-popup.css">
+        <link rel="stylesheet" href="./js/libs/swiper/dist/css/swiper.min.css">
+        <link rel="stylesheet" href="./font/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./font/fontello/css/fontello.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body class="body--document">
+        <!-- Preloader-->
+        <div class="loader">
+            <div class="loader__block"></div>
+        </div>
+        <div id="popup-comment" class="popup popup--comment mfp-hide">
+            <div class="popup__close"><i class="fa fa-close"></i></div>
+            <div class="popup__wrapper">
+                <div class="popup__title">Написать директору</div>
+                <div class="popup__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                <div class="form form--gray">
+                    <form action="#!">
+                        <fieldset>
+                            <div class="form-group form-group--inline">
+                                <label><i class="fa fa-user"></i>Ваше имя</label>
+                                <input type="text">
+                            </div>
+                            <div class="clear5"></div>
+                            <div class="form-group form-group--inline">
+                                <label><i class="fa fa-phone"></i>Телефон</label>
+                                <input type="text">
+                            </div>
+                            <div class="clear15"></div>
+                            <div class="form-group has-feedback">
+                                <label class="hidden">Комментарий</label>
+                                <textarea placeholder="Комментарий" class="form-control form-control--thin"></textarea><i class="fa fa-pencil"></i>
+                            </div>
+                            <div class="clear15"></div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn--yellow">Отправить</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="popup-write-director" class="popup popup--comment mfp-hide">
+            <div class="popup__close"><i class="fa fa-close"></i></div>
+            <div class="popup__wrapper">
+                <div class="popup__title">Написать директору</div>
+                <div class="popup__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                <div class="form form--gray">
+                    <form action="#!">
+                        <fieldset>
+                            <div class="form-group form-group--inline has-error">
+                                <label><i class="fa fa-user"></i>Ваше имя</label>
+                                <input type="text">
+                            </div>
+                            <div class="clear5"></div>
+                            <div class="form-group form-group--inline">
+                                <label><i class="fa fa-phone"></i>Телефон</label>
+                                <input type="text">
+                            </div>
+                            <div class="clear15"></div>
+                            <div class="form-group has-feedback has-error">
+                                <label class="hidden">Комментарий</label>
+                                <textarea placeholder="Комментарий" class="form-control form-control--thin"></textarea><i class="fa fa-pencil"></i>
+                            </div>
+                            <div class="clear15"></div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn--yellow">Отправить</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="popup-order" class="popup popup--order mfp-hide">
+            <div class="popup__close"><i class="fa fa-close"></i></div>
+            <div class="popup__wrapper">
+                <div class="popup__title">Забронировать стол</div>
+                <div class="popup__info">Пожалуйста заполните форму. Наш специалист перезвонит Вам в ближайшее время для уточнения деталей. </div>
+                <div class="form form--gray">
+                    <form action="#!">
+                        <fieldset>
+                            <div class="form-group form-group--inline">
+                                <label><i class="fa fa-user"></i>Ваше имя</label>
+                                <input type="text">
+                            </div>
+                            <div class="clear"></div>
+                            <div class="form-group form-group--inline">
+                                <label><i class="fa fa-phone"></i>Телефон</label>
+                                <input type="text">
+                            </div>
+                            <div class="clear"></div>
+                            <div class="form-group form-group--inline">
+                                <label><i class="fa fa-clock-o"></i>Время</label>
+                                <input type="text">
+                            </div>
+                            <div class="clear"></div>
+                            <div class="form-group form-group--inline">
+                                <label><i class="fa fa-calendar"></i>Дата</label>
+                                <input type="text">
+                            </div>
+                            <div class="clear"></div>
+                            <div class="form-group form-group--inline">
+                                <label><i class="fa fa-users"></i>Гостей</label>
+                                <input type="text">
+                            </div>
+                            <div class="clear15"></div>
+                            <div class="form-group has-feedback">
+                                <label class="hidden">Примечание</label>
+                                <textarea placeholder="Примечание" class="form-control form-control--thin"></textarea><i class="fa fa-pencil"></i>
+                            </div>
+                            <div class="clear5"></div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn--yellow">Отправить</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Header-->
+        <header class="header"> 
+            <div class="header__mobile">
+                <div class="container">
+                    <div class="header__mobile-lang">
+                        <ul>
+                            <li><a href="#!">English</a></li>
+                            <li class="active"><a href="#!">Русский</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__mobile-button"><i class="fa fa-times"></i></div>
+                    <div class="header__mobile-navigation">
+                        <ul>
+                            <li class="active"><a href="index.html">Главная</a></li>
+                            <li><a href="restoran.html">Ресторан</a></li>
+                            <li><a href="club.html">Клуб</a></li>
+                            <li><a href="karaoke.html">Караоке</a></li>
+                            <li><a href="laung.html">Лаунж</a></li>
+                            <li><a href="hall-1.html">Банкетный зал</a></li>
+                            <li><a href="hall-2.html">Конференц зал</a></li>
+                            <li><a href="contacts.html">Наши контакты</a></li>
+                        </ul>
+                        <div class="header__social"><a href="#!" target="_blank"><i class="fa fa-tripadvisor"></i></a><a href="#!" target="_blank"><i class="fa fa-facebook"></i></a><a href="#!" target="_blank"><i class="fa fa-vk"></i></a><a href="#!" target="_blank"><i class="fa fa-twitter"></i></a><a href="#!" target="_blank"><i class="fa fa-google-plus"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__lang">
+                        <ul>
+                            <li><a href="#!">Рус</a></li>
+                            <li class="active"><a href="#!">En</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__top-left">
+                        <div class="hamburger hamburger--slider js-hamburger">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                        <div class="header__logo"><a href="index.html"><img src="./img/logo.png" alt=""></a></div>
+                    </div>
+                    <div class="header__button"><a href="#popup-order" class="btn btn--small btn--yellow open-popup-link"><i class="icon-picture visible-xs-inline-block"></i><span class="hidden-xs">Забронировать стол</span></a></div>
+                    <div class="header__top-center">
+                        <div class="header__top-center__wrapper">
+                            <div> <a href="contacts.html"> <i class="fa fa-home"></i>Наши контакты</a></div>
+                            <div> <a href="callto:"> <i class="fa fa-phone"></i><strong>8 800 731 10 02</strong></a></div>
+                            <div>
+                                <div class="header__social"><a href="#!" target="_blank"><i class="fa fa-tripadvisor"></i></a><a href="#!" target="_blank"><i class="fa fa-facebook"></i></a><a href="#!" target="_blank"><i class="fa fa-vk"></i></a><a href="#!" target="_blank"><i class="fa fa-twitter"></i></a><a href="#!" target="_blank"><i class="fa fa-google-plus"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="header__logo"><a href="index.html"><img src="./img/logo.png" alt=""></a></div>
+                    <nav role="navigation" class="header__navigation">
+                        <ul>
+                            <li><a href="restoran.html" title="Ресторан">Ресторан</a></li>
+                            <li><a href="club.html" title="Клуб">Клуб</a></li>
+                            <li><a href="karaoke.html" title="Караоке">Караоке</a></li>
+                            <li><a href="laung.html" title="Лаунж">Лаунж</a></li>
+                            <li><a href="hall-1.html" title="Банкетный зал">Банкетный зал</a></li>
+                            <li><a href="hall-2.html" title="Конференц зал">Конференц зал</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="header-separator"></div>
+        <!-- Content-->
+        <div class="content">
+            <!-- Section-->
+            <div class="section no--p-bottom">
+                <div class="container">
+                    <div class="section__head">
+                        <div>
+                            <div class="h1">Контакты<small><a href="#!"> <i class="fa fa-angle-left"></i>Вернуться назад</a></small></div>
+                        </div>
+                    </div>
+                    <div class="section__content section__content--contacts">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="contacts__block"><i class="fa fa-map-marker"></i>
+                                    <h4>Адрес</h4>
+                                    <p>г. Харьков, <br>пер. Костюринский, 2<br>ТРЦ Palladium</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="contacts__block"><i class="fa fa-phone"></i>
+                                    <h4>Телефон</h4>
+                                    <p>+38 (050) 344-29-15<br>+38 (057) 731-10-02   </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="contacts__block"><i class="fa fa-clock-o"></i>
+                                    <h4>Время работы</h4>
+                                    <p>Мы работаем 24/7</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section-->
+            <div class="section section--map">
+                <div class="container">
+                    <div id="map_canvas" class="contacts__map contacts__map--document"></div>
+                    <!-- Google Map-->
+                    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+                    <script>
+                        function initialize() {
+                          var myLatlng = new google.maps.LatLng(49.9877839,36.2340847);
+                          var map_options = {
+                            zoom: 16,
+                            mapTypeId: google.maps.MapTypeId.ROADMAP,
+                            center: myLatlng,
+                            scrollwheel: false,
+                            disableDefaultUI: true
+                          }
+                          var map = new google.maps.Map(document.getElementById('map_canvas'), map_options)
+                          var marker = new google.maps.Marker({
+                            position: myLatlng,
+                            map: map
+                          });
+                          /* Remove if you dont want B/W Google Map */
+                          /*
+                          var styles = [
+                          {
+                          featureType: "all",
+                          stylers: [
+                          { saturation: -100 }
+                          ]
+                          }
+                          ];
+                          map.setOptions({styles: styles});
+                          */
+                        }
+                        google.maps.event.addDomListener(window, 'load', initialize);
+                    </script>
+                    <!-- Google Map Ends!-->
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="container">
+                    <div class="footer__logo"><img src="./img/logo.png" alt=""></div>
+                    <div class="footer__button"><a href="#popup-write-director" class="btn btn--small btn--yellow btn--border open-popup-link">Написать директору</a></div>
+                    <div class="footer__top-center">
+                        <div> <a href="callto:"> <i class="fa fa-phone"></i><strong>8 800 731 10 02</strong></a></div>
+                        <div> <a href="contacts.html"> <i class="fa fa-home"></i>Наши контакты</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__center">
+                <div class="container">
+                    <nav role="navigation" class="footer__navigation"> 
+                        <ul>
+                            <li><a href="restoran.html">Ресторан</a></li>
+                            <li><a href="club.html">Клуб</a></li>
+                            <li><a href="karaoke.html">Караоке</a></li>
+                            <li><a href="laung.html">Лаунж</a></li>
+                            <li><a href="hall-1.html">Банкетный зал</a></li>
+                            <li><a href="hall-2.html">Конференц зал</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__social"><a href="#!" target="_blank"><i class="fa fa-tripadvisor"></i></a><a href="#!" target="_blank"><i class="fa fa-facebook"></i></a><a href="#!" target="_blank"><i class="fa fa-vk"></i></a><a href="#!" target="_blank"><i class="fa fa-twitter"></i></a><a href="#!" target="_blank"><i class="fa fa-google-plus"></i></a></div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__copyright">© Panorama Lounge 2017</div>
+                    <div class="footer__development"><a href="#!" target="_blank">Разработка DARTC</a></div>
+                </div>
+            </div>
+        </footer>
+        <!--[if gte IE 9]
+        <script src='./js/libs/html5shiv/es5-shim.min.js'>
+        <script src='./js/libs/html5shiv/html5shiv.min.js'>
+        <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+        <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+        
+        -->
+        <!-- Load Scripts-->
+        <script src="./js/libs.js"></script>
+        <!-- Footer js-->
+        <script src="./js/libs/swiper/dist/js/swiper.min.js"></script>
+        <script src="./js/common.js"></script>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+/* buttons */
+
+.btn
+  display: inline-block
+  padding: 0 20px
+  margin-bottom: 0
+  font-size: rem(14)
+  font-weight: 400
+  text-align: center
+  white-space: nowrap
+  vertical-align: middle
+  touch-action: manipulation
+  cursor: pointer
+  user-select: none
+  background:
+    image: none
+    color: $color-gray
+  border: 1px solid $color-gray
+  border-radius: 25px
+  height: 50px
+  line-height: 48px
+  transition: color 0.35s, background-color 0.35s, border-color 0.35s
+  font-family: $font-opensans-r
+  text-transform: uppercase
+  text-decoration: none
+  min-width: 170px
+  font-family: $font-opensans-b
+
+  &:hover, &:focus, &:active
+    outline: none
+
+  &--default
+    color: $color-white
+    background-color: #464647
+    border-color: $color-white
+    &:hover
+      border-color: $color-orange
+      color: $color-orange
+
+  &--border
+    background: $color-white
+    border-color: $primary-color
+    color: $primary-color
+    &:hover, &:focus
+      background: $color-graydark
+      border-color: $color-graydark
+      color: $color-white
+
+  &--yellow
+    background: $color-orange
+    border-color: $color-orange
+    color: $primary-color
+    &:hover, &:focus
+      color: $color-white
+      border-color: $color-orange
+    &.btn--border
+      background-color: transparent
+      color: $color-orange
+      border-color: $color-orange
+      &:hover
+        background-color: $color-orange
+        color: $primary-color
+        border-color: $color-orange
+
+  &--small
+    height: 35px
+    line-height: 33px
+
+  &--gallery
+    background: transparent
+    border-color: $color-white
+    color: $color-white
+    &:hover, &:focus
+      background: $color-graydark
+      border-color: $color-graydark
+      color: $color-white
+
+  &--index
+    position: absolute
+    bottom: 125px
+    left: 50%
+    transform: translateX(-50%)
+    background: rgba($color-white,.1)
+    border-color: $color-white
+    color: $color-white
+    &:hover, &:focus
+      color: $primary-color
+      background-color: rgba($color-white,1)

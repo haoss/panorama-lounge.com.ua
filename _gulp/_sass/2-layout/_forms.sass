@@ -1,0 +1,116 @@
+/* forms */
+
+input
+  &::-webkit-input-placeholder
+    color: #63666e
+  &::-moz-placeholder
+    color: #63666e
+  &:-ms-input-placeholder
+    color: #63666e
+  &:-moz-placeholder
+    color: #63666e
+
+button, input, optgroup, select, textarea
+  margin: 0
+  font: inherit
+  color: inherit
+  outline: none
+  &:hover, &:focus, &:active
+    outline: none
+
+button, html input[type=button], input[type=reset], input[type=submit]
+  -webkit-appearance: button
+  cursor: pointer
+  outline: none
+
+.form
+  &--gray
+    color: #63666e
+  &-group,  &__group
+    margin-bottom: 15px
+    &.has-feedback
+      position: relative
+      .fa
+        position: absolute
+        top: 10px
+        left: 10px
+        font-size: rem(13)
+        color: #63666e
+    &--table
+      display: table
+      &>div
+        display: table-cell
+        vertical-align: top
+        &+div
+          padding-left: 30px
+    &--inline
+      label
+        width: 120px
+        margin: 0
+        padding-left: 9px
+        .fa
+          font-size: rem(13)
+          margin-right: 5px
+      input
+        width: 194px
+        border: 0
+        border-bottom: 1px solid $color-gray
+        color: $color-graydark
+      &.has-error
+        input
+          border-color: $color-red
+
+  &-control, &__control
+    display: block
+    width: 100%
+    height: 50px
+    padding: 6px 30px
+    font-size: rem(14)
+    line-height: 1.42857143
+    font-family: $font-opensans-r
+    color: #555
+    background-color: $color-white
+    background-image: none
+    border: 1px solid $primary-color
+    border-radius: 25px
+    box-shadow: none
+    transition: border-color all .35s, box-shadow all .35s
+    &--thin
+      border-radius: 5px
+      border-color: $color-gray
+      &:focus
+        box-shadow: none
+
+textarea
+  &.form-control, &.form__control
+    height: 110px
+    resize: none
+
+label
+  display: inline-block
+  max-width: 100%
+  margin-bottom: 5px
+  font-weight: 400
+  font-family: $font-opensans-r
+
+.has
+  &-success .form-control
+    border-color: #3c763d
+    box-shadow: none
+
+  &-warning .form-control
+    border-color: #8a6d3b
+    box-shadow: none
+
+  &-error .form-control
+    border-color: $color-red
+    box-shadow: none
+
+  &-success .control-label
+    color: #3c763d
+
+  &-warning .control-label
+    color: #8a6d3b
+
+  &-error .control-label
+    color: #a94442

@@ -1,0 +1,116 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Событие' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Событие' + ' - Panorama' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body.body--document
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header
+    .header-separator
+    
+    // Content
+    .content
+      
+      .section
+        .container
+                
+          .section__head
+            div
+              .h1 Клуб
+                small
+                  a(href="#!") 
+                    i.fa.fa-angle-left
+                    | Вернуться к списку
+
+          // Event 
+          .event__body
+            
+            .row
+              .col-lg-10.col-lg-push-1
+            
+                .event__head
+                  h1 Лучшие девушки Украины
+                  
+                .event__wrapper
+                  .row
+                    .col-md-6 
+                      .event__time.visible-sm.visible-xs Пятница, 15 сентября. Начало в 23:00
+                      img(src="./img/resto-menu-1.png", alt="").event__img.img-responsive
+                    .col-md-6
+                      .event__time.hidden-sm.hidden-xs Пятница, 15 сентября. Начало в 23:00
+                      p Журнал "Завидные Невесты- ИЗБРАННЫЕ" объявляет о начале кастинга девушек в новый номер глянцевого журнала! Кастинг пройдет в виде модной вечеринки, на которой кроме отбора в самый обсуждаемый журнал Украины пройдут еще следующие кастинги:
+                        br
+                        | - Кастинг грандиозного шоу Красоты "Королева Харькова 2018" под эгидой всеукраинского телевизионного проекта "Королева Украины" 
+                        br
+                        | - Кастинг Дмитрия Климашенко в группу "Горячий Шоколад"
+                      p Ведущий вечера - Мс Рыбик
+                        br
+                        | НЕ ПРОПУСТИ СВОЙ ШАНС СТАТЬ ИЗВЕСТНОЙ И УЗНАВАЕМОЙ! 
+                        br
+                        | #ГлянцевыйПроектЗавидныеНевесты #ЗавидныеНевесты #ЗавидныеНевестыИзбранные #Харьков
+          
+            .event__info
+              div
+                a(href="#!").link.link--reverse 
+                  i.fa.fa-map-marker
+                  | пер. Костюринский, 2
+              div 
+                a(href="#!").link.link--reverse 
+                  i.fa.fa-phone
+                  | +38 (050) 344-29-15 
+              div 
+                a(href="#!").link.link--reverse 
+                  i.fa.fa-phone
+                  | +38 (057) 731-10-02  
+              div 
+                a(href="#popup-order").open-popup-link
+                  i.fa.fa-pencil-square
+                  | Забронировать стол
+          
+          .gallery__row.row.gallery
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-1.png").gallery-item
+                  img(src="./img/gallery-list-1.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-2.png").gallery-item
+                  img(src="./img/gallery-list-2.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-3.png").gallery-item
+                  img(src="./img/gallery-list-3.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-1.png").gallery-item
+                  img(src="./img/gallery-list-1.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-2.png").gallery-item
+                  img(src="./img/gallery-list-2.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-3.png").gallery-item
+                  img(src="./img/gallery-list-3.png", alt="").img-responsive
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    include ./_include/_js-body-bottom

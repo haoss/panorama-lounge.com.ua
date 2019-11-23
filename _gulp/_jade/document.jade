@@ -1,0 +1,84 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Типовая страница 1' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Типовая страница 1' + ' - Panorama' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body.body--document
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header
+    .header-separator
+    
+    // Content
+    .content
+      
+      .section
+        .container
+                
+          .section__head
+            div
+              .h1 Панорама
+
+          // Event 
+          .event__body.no--p-bottom
+            
+            .row
+              .col-lg-10.col-lg-push-1
+                  
+                .event__wrapper.no--m-bottom
+                  .row
+                    .col-md-6 
+                      img(src="./img/resto-menu-1.png", alt="").event__img.img-responsive
+                    .col-md-6
+                      
+                      p Мы взяли солидность и чопорность ресторана, добавили жизнерадостность и задушевность караоке, приправили драйвом ночного клуба, растворили эту смесь в уюте и комфорте лаунжа, а потом украсили блеском звездных вечеринок – яркий и позитивный коктейль под названием Panorama к Вашим услугам. Хотите попробовать? Приходите, нас легко найти. Мы располагаемся в самом центре Харькова, занимая три уровня и примерно 1000м.кв. в красивом современном здании ТРЦ Palladium.
+                      p Добро пожаловать в Panorama! Мы открыты для Вас круглосуточно и предлагаем отдых и развлечения на любой вкус, сохраняя демократичные цены при высочайшем уровне сервиса. На втором уровне ТРЦ Palladium Вы можете посетить Кинотеатр Palladium Cinema. Уникальный кинотеатр повышенного комфорта, с возможностью заказать фильм.
+          
+      .section.gallery-list.no--b-image
+        .container
+          .gallery__row.row.gallery
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-1.png").gallery-item
+                  img(src="./img/gallery-list-1.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-2.png").gallery-item
+                  img(src="./img/gallery-list-2.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-3.png").gallery-item
+                  img(src="./img/gallery-list-3.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-1.png").gallery-item
+                  img(src="./img/gallery-list-1.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-2.png").gallery-item
+                  img(src="./img/gallery-list-2.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-3.png").gallery-item
+                  img(src="./img/gallery-list-3.png", alt="").img-responsive
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    include ./_include/_js-body-bottom

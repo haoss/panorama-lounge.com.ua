@@ -1,0 +1,108 @@
+// Header
+header.header 
+  
+  .header__mobile
+    .container
+      .header__mobile-lang
+        ul
+          li
+            a(href="#!") English
+          li.active
+            a(href="#!") Русский
+      .header__mobile-button
+        i.fa.fa-times
+      .header__mobile-navigation
+        ul
+          li.active
+            a(href="index.html") Главная
+          li
+            a(href="restoran.html") Ресторан
+          li
+            a(href="club.html") Клуб
+          li
+            a(href="karaoke.html") Караоке
+          li
+            a(href="laung.html") Лаунж
+          li
+            a(href="hall-1.html") Банкетный зал
+          li
+            a(href="hall-2.html") Конференц зал
+          li
+            a(href="contacts.html") Наши контакты
+        .header__social
+          a(href="#!" target="_blank")
+            i.fa.fa-tripadvisor
+          a(href="#!" target="_blank")
+            i.fa.fa-facebook
+          a(href="#!" target="_blank")
+            i.fa.fa-vk
+          a(href="#!" target="_blank")
+            i.fa.fa-twitter
+          a(href="#!" target="_blank")
+            i.fa.fa-google-plus
+    
+  .header__top
+    .container
+      
+      .header__lang
+        ul
+          li
+            a(href="#!") Рус
+          li.active
+            a(href="#!") En
+      
+      .header__top-left
+        .hamburger.hamburger--slider.js-hamburger
+          .hamburger-box
+            .hamburger-inner
+
+        .header__logo
+          a(href="index.html")
+            img(src="./img/logo.png", alt="")
+      
+      .header__button
+        a(href="#popup-order").btn.btn--small.btn--yellow.open-popup-link
+          i.icon-picture.visible-xs-inline-block
+          span.hidden-xs Забронировать стол
+        
+      .header__top-center
+        .header__top-center__wrapper
+          div 
+            a(href="contacts.html") 
+              i.fa.fa-home
+              | Наши контакты
+          div 
+            a(href="callto:") 
+              i.fa.fa-phone
+              strong 8 800 731 10 02
+          div
+            .header__social
+              a(href="#!" target="_blank")
+                i.fa.fa-tripadvisor
+              a(href="#!" target="_blank")
+                i.fa.fa-facebook
+              a(href="#!" target="_blank")
+                i.fa.fa-vk
+              a(href="#!" target="_blank")
+                i.fa.fa-twitter
+              a(href="#!" target="_blank")
+                i.fa.fa-google-plus
+    
+  .header__bottom
+    .container
+      
+      .header__logo
+        a(href="index.html")
+          img(src="./img/logo.png", alt="")
+      
+      -var navigation = { 'Ресторан': 'restoran.html', 'Клуб': 'club.html', 'Караоке': 'karaoke.html', 'Лаунж': 'laung.html', 'Банкетный зал': 'hall-1.html', 'Конференц зал': 'hall-2.html'};
+      
+      nav.header__navigation(role="navigation")
+        ul
+          each val, key in navigation
+            if active === key
+              li.active
+                a(href=val, title=key)= key
+            else
+              li
+                a(href=val, title=key)= key

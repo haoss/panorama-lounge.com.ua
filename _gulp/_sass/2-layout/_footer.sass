@@ -1,0 +1,89 @@
+/* footer */
+.footer
+  background: #35373d
+  font-size: rem(14)
+  color: $color-white
+  padding-top: 45px
+  a
+    color: $color-white
+    text-decoration: none
+    &:hover
+      color: $color-orange
+
+  &__bottom
+    border-top: 1px solid #4a4b51
+    font-size: rem(12)
+  &__copyright
+    float: left
+    height: 60px
+    line-height: 60px
+  &__development
+    float: right
+    height: 60px
+    line-height: 60px
+
+  &__logo
+    float: left
+    margin-top: -16px
+    img
+      display: block
+  &__button
+    float: right
+  &__top-center
+    text-align: center
+    font-size: rem(16)
+    padding: 7px 0
+    &>div
+      display: inline-block
+      line-height: 20px
+      padding-right: 35px
+      &+div
+        padding-left: 35px
+        padding-right: 0
+        border-left: 1px solid #9a9b9e
+      a
+        &:hover
+          color: $color-orange
+      i
+        margin-right: 5px
+        color: $color-orange
+  &__navigation
+    float: left
+    font-family: $font-opensans-sb
+    text-transform: uppercase
+    ul
+      margin: 0
+      padding: 0
+      li
+        list-style: none
+        margin: 0
+        display: inline-block
+        &+li
+          margin-left: 30px
+        a
+          display: inline-block
+          line-height: 30px
+          &:hover
+            color: $color-orange
+  &__social
+    float: right
+    white-space: nowrap
+    a
+      display: inline-block
+      height: 30px
+      line-height: 28px
+      width: 30px
+      border-radius: 50%
+      border: 1px solid $color-white
+      text-align: center
+      font-size: rem(12)
+      i
+        display: inline-block
+        line-height: 1
+      &+a
+        margin-left: 14px
+      &:hover
+        border-color: $color-orange
+        color: $color-orange
+  &__center
+    padding: 35px 0

@@ -1,0 +1,452 @@
+/*==========  Desktop First Method  ==========*/
+
+/* 1920 */
+@media only screen and (min-width : 1999px)
+  /**/
+
+@media only screen and (max-width : 1599px)
+  /**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1439px)
+  .kitchen
+    &__img
+      &>a
+        font-size: rem(25)
+        justify-content: flex-start
+        padding-left: 40px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+  .section
+    padding: 65px 0
+    &__head
+      max-width: 778px
+  .event
+    &__menu
+      &--about
+        padding-top: 75px
+  .kitchen
+    &__list-dish
+      padding: 0 80px
+    &__dish
+      &-img
+        width: 295px
+      &-wrapper
+        &>div
+          &+div
+            padding-left: 30px
+  .header
+    // height: 60px
+    &__bottom, &__lang
+      display: none
+    &__top-left
+      display: block
+    &__logo
+      width: 130px
+      margin: 13px 0 13px 55px
+    &__top-center
+      padding-left: 230px
+      &__wrapper
+        &>div
+          &:first-child, &:last-child
+            display: none
+    &-separator
+      height: 60px
+  .event
+    &__body
+      padding-bottom: 50px
+    &__wrapper
+      margin-bottom: 50px
+  .gallery-list
+    padding-bottom: 35px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+  .section
+    padding: 55px 0
+    &__content
+      &--narrow
+        max-width: 650px
+      &--comment
+        max-width: 650px
+      &--hall2-1
+        max-width: 650px
+        margin: 30px auto
+  .event
+    &__block
+      max-width: 355px
+    &__menu
+      &--about
+        padding-top: 55px
+  .kitchen
+    &__menu
+      padding: 50px 0
+      .swiper-slide
+        width: 262px
+      &-scroll-wrapper
+        max-width: 720px
+        margin-top: 15px
+      &-scroll .swiper-scrollbar
+        opacity: 1 !important
+    &__img
+      &>a
+        padding-left: 20px
+        font-size: rem(21)
+    &__list-dish
+      padding: 0
+      &-button
+        display: none
+      .swiper-pagination
+        display: block
+    &__dish
+      &-title
+        font-size: rem(24)
+  .interior
+    &__gallery
+      .swiper-slide
+        width: 260px
+  .footer
+    &__navigation
+      float: none
+      text-align: center
+    &__social
+      float: none
+      text-align: center
+      padding-top: 20px
+    &__center
+      padding: 20px 0
+    &__top-center
+      padding-top: 70px
+  .header
+    &__mobile-navigation
+      justify-content: flex-start
+  .gallery-list
+    padding-bottom: 25px
+    &__block
+      font-size: rem(18)
+      figcaption
+        padding-left: 15px
+        padding-right: 15px
+        padding-bottom: 15px
+  .event
+    &__img
+      margin: 0 auto 25px
+    &__wrapper
+      margin-bottom: 20px
+    &__info
+      &>div
+        width: 50%
+        &:nth-child(3)
+          border-left: 0
+        margin: 5px 0
+    &__body
+      padding-bottom: 30px
+  .content--404
+    min-height: 500px
+  .btn
+    &--index
+      bottom: 100px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+
+  .animated
+    transition-property: none !important
+    transform: none !important
+    animation: none !important
+  .section
+    &__head
+      &::before, &::after
+        display: none
+      &>div
+        padding: 0
+    &__content
+      &--comment
+        max-width: 430px
+  .event
+    &__block
+      max-width: 450px
+      padding: 0
+      // &+.event__block
+        // margin-top: 45px
+  .kitchen
+    &__menu-scroll
+      padding: 0 15px
+    &__list-dish
+      &-button
+        display: block
+      .swiper-pagination
+        padding-top: 0
+        // display: none
+      .swiper-button-prev, .swiper-button-next
+        top: 220px
+    &__dish
+      &-wrapper
+        display: block
+        text-align: center
+        &>div
+          display: block
+          &+div
+            padding: 20px 0 0 0
+      &-img
+        width: 430px
+        margin: 0 auto
+  .subscription
+    &__form
+      .form-control
+        width: 270px
+  .form-group
+    &--table
+      &>div
+        &+div
+          padding-left: 15px
+  .contacts
+    &__map
+      padding: 0
+      &--document
+        padding-bottom: 300px
+    &__info
+      width: 100%
+      position: relative
+      top: auto
+      left: -15px
+      right: -15px
+      width: calc(100% + 30px)
+      box-shadow: none
+      padding-left: 20px
+      .table
+        margin: 0 auto
+  .footer
+    &__navigation
+      margin-bottom: 10px
+      ul
+        li
+          display: block
+          &+li
+            margin-left: 0
+  .header
+    &.is-scroll
+      .header__logo
+        margin-left: 40px
+      .header__top-center
+        padding-left: 210px
+    &__logo
+      margin-left: 40px
+    &__button
+      .btn
+        width: 35px
+        padding: 0
+        min-width: inherit
+        i
+          margin-left: -6px
+    &__top-center
+      padding-right: 55px
+      padding-left: 210px
+    &__mobile-navigation
+      overflow: auto
+  .popup
+    max-width: 435px
+    &__wrapper
+      padding-left: 40px
+      padding-right: 40px
+      background-image: none !important
+    &__title
+      font-size: rem(24)
+  .gallery-list
+    &__block
+      font-size: rem(16)
+  .th
+    &__wrapper
+      display: block
+      &>div
+        display: inline-block
+        width: 49%
+        &:first-child, &:nth-child(2)
+          margin-bottom: 30px
+  .pagination
+    padding-top: 20px
+    font-size: rem(14)
+    ul
+      li
+        &>a, &>span
+          margin: 0 5px
+          height: 35px
+          width: 35px
+          line-height: 33px
+  .content--404
+    background-image: none
+    min-height: inherit
+  .page404__info
+    padding: 50px 0
+    text-align: center
+  .btn
+    &--index
+      bottom: 50px
+
+@media only screen and (max-width: 599px)
+  .footer
+    &__logo
+      width: 100%
+      float: none
+      margin: 0
+      img
+        margin: 0 auto
+    &__button
+      float: none
+      text-align: center
+      margin-top: 30px
+    &__top-center
+      padding-top: 30px
+  .col-xxs-12
+    width: 100% !important
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 479px)
+  .section
+    padding: 40px 0
+  .h1, h1
+    font-size: rem(25)
+  .event
+    &__menu
+      &--about
+        padding-top: 40
+    &__block
+      font-size: rem(18)
+      // &+.event__block
+        // margin-top: 35px
+  .subscription
+    &__form
+      .form-group
+        &--table
+          display: block
+          &>div
+            display: block
+            &+div
+              padding: 15px 0 0 0
+      p
+        margin-bottom: 25px
+  .kitchen
+    &__dish
+      &-img
+        width: 280px
+      &-title
+        font-size: 20px
+  .contacts
+    &__info
+      padding-left: 15px
+      padding-right: 15px
+      .table
+        td
+          padding-bottom: 10px
+  .footer
+    &__top-center
+      &>div
+        display: block
+        padding: 0 !important
+        border: 0 !important
+        line-height: 35px
+    &__center
+      padding-top: 10px
+  .header
+    &__top-center
+      &__wrapper
+        &>div
+          display: none
+    &__logo
+      position: absolute
+      left: 50px
+      margin-left: 0px
+      right: 50px
+      width: auto
+      img
+        width: 130px
+        margin: 0 auto
+  .popup
+    max-width: 290px
+    &__wrapper
+      padding-left: 15px
+      padding-right: 15px
+    &__title
+      font-size: rem(20)
+  .form
+    &-group, &__group
+      &--inline
+        input
+          width: 133px
+  .th
+    &__wrapper
+      &>div
+        display: block
+        width: 100%
+        &:nth-child(3)
+          margin-bottom: 30px
+  .event
+    &__info
+      &>div
+        display: block
+        float: none
+        width: 100%
+        border: 0 !important
+        margin: 0
+        position: relative
+        height: 46px
+        line-height: 44px
+        &+div
+          &::before
+            position: absolute
+            left: 50%
+            top: 0
+            width: 40px
+            transform: translateX(-20px)
+            height: 1px
+            background: #c5c5c5
+            content: ''
+  .gallery-list
+    padding-bottom: 15px
+  .page404__info
+    p
+      strong
+        margin-bottom: 5px
+        line-height: 1.3
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 319px)
+  /**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+  /**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+  /**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  .container
+    width: 750px
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+  .container
+    width: 970px
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+  .container
+    width: 1170px
+
+/* 1440 */
+@media only screen and (min-width : 1440px)
+  /**/
+
+@media only screen and (max-width : 1600px)
+  /**/
+
+/* 1920 */
+@media only screen and (min-width : 1920px)
+  /**/

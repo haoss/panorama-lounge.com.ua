@@ -1,0 +1,107 @@
+.loader
+  .loader__block
+
+#popup-comment.popup.popup--comment.mfp-hide
+  .popup__close
+    i.fa.fa-close
+  .popup__wrapper
+    .popup__title Написать директору
+    .popup__info Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    .form.form--gray
+      form(action="#!")
+        fieldset
+          .form-group.form-group--inline
+            label
+              i.fa.fa-user
+              | Ваше имя
+            input(type="text")
+          .clear5
+          .form-group.form-group--inline
+            label
+              i.fa.fa-phone
+              | Телефон
+            input(type="text")
+          .clear15
+          .form-group.has-feedback
+            label.hidden Комментарий
+            textarea.form-control.form-control--thin(placeholder="Комментарий")
+            i.fa.fa-pencil
+          .clear15
+          .text-center
+            button(type="submit").btn.btn--yellow Отправить
+
+#popup-write-director.popup.popup--comment.mfp-hide
+  .popup__close
+    i.fa.fa-close
+  .popup__wrapper
+    .popup__title Написать директору
+    .popup__info Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    .form.form--gray
+      form(action="#!")
+        fieldset
+          .form-group.form-group--inline.has-error
+            label
+              i.fa.fa-user
+              | Ваше имя
+            input(type="text")
+          .clear5
+          .form-group.form-group--inline
+            label
+              i.fa.fa-phone
+              | Телефон
+            input(type="text")
+          .clear15
+          .form-group.has-feedback.has-error
+            label.hidden Комментарий
+            textarea.form-control.form-control--thin(placeholder="Комментарий")
+            i.fa.fa-pencil
+          .clear15
+          .text-center
+            button(type="submit").btn.btn--yellow Отправить
+
+#popup-order.popup.popup--order.mfp-hide
+  .popup__close
+    i.fa.fa-close
+  .popup__wrapper
+    .popup__title Забронировать стол
+    .popup__info Пожалуйста заполните форму. Наш специалист перезвонит Вам в ближайшее время для уточнения деталей. 
+    .form.form--gray
+      form(action="#!")
+        fieldset
+          .form-group.form-group--inline
+            label
+              i.fa.fa-user
+              | Ваше имя
+            input(type="text")
+          .clear
+          .form-group.form-group--inline
+            label
+              i.fa.fa-phone
+              | Телефон
+            input(type="text")
+          .clear
+          .form-group.form-group--inline
+            label
+              i.fa.fa-clock-o
+              | Время
+            input(type="text")
+          .clear
+          .form-group.form-group--inline
+            label
+              i.fa.fa-calendar
+              | Дата
+            input(type="text")
+          .clear
+          .form-group.form-group--inline
+            label
+              i.fa.fa-users
+              | Гостей
+            input(type="text")
+          .clear15
+          .form-group.has-feedback
+            label.hidden Примечание
+            textarea.form-control.form-control--thin(placeholder="Примечание")
+            i.fa.fa-pencil
+          .clear5
+          .text-center
+            button(type="submit").btn.btn--yellow Отправить

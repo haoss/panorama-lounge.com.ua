@@ -1,0 +1,46 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Страница 404' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Страница 404' + ' - Panorama' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body.body--document
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header
+    .header-separator
+    
+    // Content
+    .content.content--404
+      .container
+          
+          .row
+            .col-md-6.col-sm-4.hidden-sm.hidden-xs &nbsp;
+            .col-md-6.col-sm-8
+              
+              .page404__info
+                .h1 404
+                p
+                  strong Упс… Мы не можем найти то, что Вы ищете...
+                  span К сожалению, введенный Вами адрес недоступен
+                a(href="#!").btn.btn--default Перейти на главную
+      
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    include ./_include/_js-body-bottom

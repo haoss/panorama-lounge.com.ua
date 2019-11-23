@@ -1,0 +1,289 @@
+/* header */
+.header
+  // background-color: $color-gray
+  position: fixed
+  z-index: 100
+  left: 0
+  top: 0
+  width: 100%
+  // height: 180px
+  &__top
+    background: rgba($color-black,.6)
+    height: 60px
+    overflow: hidden
+    &-center
+      padding: 0 255px 0 190px
+      font-size: rem(12)
+      &__wrapper
+        margin: 19px 0
+        display: table
+        width: 100%
+        &>div
+          display: table-cell
+          vertical-align: middle
+          width: 100%
+          text-align: center
+          &:first-child, &:last-child
+            width: 1px
+            white-space: nowrap
+          &:first-child
+            text-align: left
+          &:last-child
+            text-align: right
+      a
+        color: $color-white
+        text-decoration: none
+        &[href*='callto:']
+          font-size: rem(15)
+        i
+          margin-right: 8px
+        &:hover
+          color: $color-orange
+  &__social
+    font-size: rem(12)
+    a
+      display: inline-block
+      padding: 0 5px
+    i
+      margin: 0
+  &__logo
+    float: left
+    margin-top: -14px
+    img
+      max-width: 100%
+      height: auto
+      display: block
+  &__bottom
+    padding: 40px 0
+    opacity: 1
+    visibility: visible
+    transition: opacity 0.25s
+  &__navigation
+    float: right
+    font-size: rem(14)
+    font-family: $font-opensans-sb
+
+    ul
+      margin: 0
+      padding: 0
+      li
+        list-style: none
+        margin: 0
+        float: left
+        a
+          display: block
+          height: 40px
+          line-height: 40px
+          text-align: center
+          text-decoration: none
+          text-transform: uppercase
+          color: $color-white
+          border-radius: 25px
+          border: 1px solid transparent
+          background: transparent
+          padding: 0 25px
+          &:hover
+            color: $color-white
+            border-color: $color-orange
+            background: rgba($color-orange,.05)
+        &.active
+          a
+            color: $color-white
+            border-color: $color-orange
+            background: rgba($color-orange,.05)
+  &__button
+    float: right
+    padding: 12px 0
+  &__lang
+    float: left
+    font-size: rem(12)
+    height: 60px
+    line-height: 58px
+    ul
+      margin: 0
+      padding: 0
+      li
+        list-style: none
+        margin: 0
+        display: none
+        &.active
+          display: block
+        &>a, &>span
+          display: block
+          color: $color-white
+          text-decoration: none
+          &::before
+            content: "\f107"
+            font-family: $font-awesome
+            display: inline-block
+            margin-right: 6px
+          &:hover
+            color: $color-orange
+  &__top-left
+    display: none
+    .hamburger
+      float: left
+      margin: 21px 0 0 0
+  &.is-scroll
+    position: fixed
+    opacity: 1
+    // height: 60px
+    .header__bottom
+      opacity: 0
+      visibility: hidden
+      padding: 0
+    .header__lang
+      display: none
+    .header__top-center
+      padding-left: 230px
+      &__wrapper
+        &>div
+          &:first-child, &:last-child
+            display: none
+    .header__top-left
+      display: block
+    .header__logo
+      width: 130px
+      margin: 13px 0 13px 55px
+  &__mobile
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 1000
+    background: rgba(#242527,.95)
+    transform: translateY(-100%)
+    transition: all 0.35s
+    opacity: 0
+    visibility: hidden
+    &.is-active
+      transform: translateY(0)
+      opacity: 1
+      visibility: visible
+    .header__social
+      border-top: 1px solid $color-graydark
+      width: 100%
+      max-width: 950px
+      margin-top: 20px
+      font-size: rem(18)
+      text-align: center
+      a
+        height: 60px
+        line-height: 60px
+        color: $color-graylight
+        padding: 0
+        width: 36px
+        text-align: center
+        &:hover
+          color: $color-orange
+
+    .container
+      position: relative
+      // background: pink
+      height: 100%
+    &-lang
+      position: absolute
+      left: 15px
+      top: 0
+      font-size: rem(18)
+      ul
+        margin: 0
+        padding: 0
+        li
+          list-style: none
+          margin: 0
+          &>a, &>span
+            height: 60px
+            line-height: 60px
+            display: block
+            color: $color-white
+            text-decoration: none
+          &>a
+            &:hover
+              color: $color-orange
+          &.active
+            display: none
+    &-button
+      position: absolute
+      right: 15px
+      top: 0
+      color: $color-white
+      padding: 13px
+      cursor: pointer
+      font-size: rem(25)
+      &:hover
+        color: $color-orange
+      i
+        line-height: 1
+    &-navigation
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 100%
+      flex-direction: column
+      padding-top: 60px
+      ul
+        margin: 0
+        padding: 0
+        font-size: rem(18)
+        font-family: $font-opensans-sb
+        text-align: center
+        text-transform: uppercase
+        li
+          margin: 0
+          list-style: none
+          &>a,&>span
+            display: block
+            text-decoration: none
+            color: $color-graylight
+            height: 50px
+            line-height: 50px
+          &>a
+            &:hover
+              color: $color-orange
+          &.active
+            &>a,&>span
+              color: $color-orange
+  &-separator
+    height: 180px
+
+.body
+  &--document
+    .header
+      &__top
+        background: #0a090a
+      &__bottom
+        background: #1d1c21
+
+.hamburger
+  float: left
+  padding: 0
+  margin: 19px 0
+  &:hover
+    opacity: 1
+  .hamburger-box
+    width: 25px
+    height: 14px
+    // background: pink
+    .hamburger-inner
+      width: 25px
+      height: 2px
+      border-radius: 0
+      background: $color-white
+      &::before, &::after
+        width: 25px
+        height: 2px
+        border-radius: 0
+        background: $color-white
+      &::before
+        top: 6px
+      &::after
+        top: 12px
+  &.is-active
+    .hamburger-inner
+      transform: translate3d(0, 6px, 0) rotate(40deg)
+      &::after
+        transform: translate3d(0, -12px, 0) rotate(-80deg)
+      &::before
+        transform: rotate(-45deg) translate3d(-5.71429px, -4px, 0)

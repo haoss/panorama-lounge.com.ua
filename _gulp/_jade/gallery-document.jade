@@ -1,0 +1,98 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Галерея фото' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Галерея фото' + ' - Panorama' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body.body--document
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header
+    .header-separator
+    
+    // Content
+    .content.content--gallery
+      
+      .section.gallery-list
+        .container
+                
+          .section__head.section__head--white
+            div
+              .h1 Фотогалерея
+                small
+                  a(href="#!") 
+                    i.fa.fa-angle-left
+                    | Вернуться к фотогалерее
+          
+          .h2.color--white 11.02.17- Afterparty премьеры фильма На 50 оттенков темнее
+          .clear10
+          
+          .gallery__row.row.gallery
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-1.png").gallery-item
+                  img(src="./img/gallery-list-1.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-2.png").gallery-item
+                  img(src="./img/gallery-list-2.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-3.png").gallery-item
+                  img(src="./img/gallery-list-3.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-1.png").gallery-item
+                  img(src="./img/gallery-list-1.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-2.png").gallery-item
+                  img(src="./img/gallery-list-2.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-3.png").gallery-item
+                  img(src="./img/gallery-list-3.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-1.png").gallery-item
+                  img(src="./img/gallery-list-1.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-2.png").gallery-item
+                  img(src="./img/gallery-list-2.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-3.png").gallery-item
+                  img(src="./img/gallery-list-3.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-1.png").gallery-item
+                  img(src="./img/gallery-list-1.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-2.png").gallery-item
+                  img(src="./img/gallery-list-2.png", alt="").img-responsive
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block.gallery-list__block--zoom
+                a(href="./img/gallery-list-3.png").gallery-item
+                  img(src="./img/gallery-list-3.png", alt="").img-responsive
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    include ./_include/_js-body-bottom

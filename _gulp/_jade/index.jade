@@ -1,0 +1,34 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Главная' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Главная' + ' - Panorama' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header
+    
+    // big banner
+    .poster(style="background-image: url('./img/poster-index.jpg');")
+      
+      a(href="#!").btn.btn--index Подробнее
+      
+    
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    include ./_include/_js-body-bottom

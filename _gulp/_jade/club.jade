@@ -1,0 +1,253 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Клуб' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Клуб' + ' - Panorama' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header
+    
+    // big banner
+    .poster(style="background-image: url('./img/poster-club.jpg')")
+    
+    // Content
+    .content
+      
+      // Section
+      .section.restaurant
+        .container
+          
+          .section__head
+            div
+              .h1 О клубе
+              
+          .section__content.section__content--narrow
+            p Спросите себя, давно ли Вам доводилось полностью расслабиться, побыть наедине с собственными мыслями и ощущениями, отвлечься от суеты большого города... Милости просим в наш Lounge, расположенный на нижнем уровне ТРЦ Palladium. Приглушенный свет, мелодичная музыка, роскошный интерьер, живой огонь, великолепный бар – все это создает атмосферу расслабленности и спокойствия, заставляет забыть проблемы и неурядицы. 
+            
+          .event__menu.event__menu--about
+            figure.event__block
+              a(href="#!")
+              img(src="./img/resto-menu-1.png", alt="").img-responsive
+              figcaption Ladies black fashion night
+            figure.event__block
+              a(href="#!")
+              img(src="./img/resto-menu-2.png", alt="").img-responsive
+              figcaption Ladies black fashion night adies black fashion  
+            figure.event__block
+              a(href="#!")
+              img(src="./img/resto-menu-1.png", alt="").img-responsive
+              figcaption Ladies black fashion night
+            figure.event__block
+              a(href="#!")
+              img(src="./img/resto-menu-2.png", alt="").img-responsive
+              figcaption Ladies black fashion night adies black fashion  
+        
+          .clear
+          .text-center
+            a(href="#!").btn.btn--border Все акции
+    
+    
+      // Section
+      .section.gallery-list
+        .container
+                
+          .section__head.section__head--white
+            div
+              .h1 Фотогалерея
+          
+          .gallery__row.row
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block
+                a(href="#")
+                  img(src="./img/gallery-list-1.png", alt="").img-responsive
+                  figcaption 08.04.2017 
+                    br
+                    | Каникулы VKLYBE.TV - 2017
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block
+                a(href="#")
+                  img(src="./img/gallery-list-2.png", alt="").img-responsive
+                  figcaption 08.04.2017 
+                    br
+                    | Каникулы VKLYBE.TV - 2017
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block
+                a(href="#")
+                  img(src="./img/gallery-list-3.png", alt="").img-responsive
+                  figcaption 08.04.2017 
+                    br
+                    | Каникулы VKLYBE.TV - 2017
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block
+                a(href="#")
+                  img(src="./img/gallery-list-1.png", alt="").img-responsive
+                  figcaption 08.04.2017 
+                    br
+                    | Каникулы VKLYBE.TV - 2017
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block
+                a(href="#")
+                  img(src="./img/gallery-list-2.png", alt="").img-responsive
+                  figcaption 08.04.2017 
+                    br
+                    | Каникулы VKLYBE.TV - 2017
+            .col-lg-4.col-xs-6.col-xxs-12
+              figure.gallery-list__block
+                a(href="#")
+                  img(src="./img/gallery-list-3.png", alt="").img-responsive
+                  figcaption 08.04.2017 
+                    br
+                    | Каникулы VKLYBE.TV - 2017
+              
+          .clear40
+          .text-center
+            a(href="#!").btn.btn--gallery смотреть еще
+    
+      // Section
+      .section.interior.no--p-bottom
+        .container
+                
+          .section__head
+            div
+              .h1 Фото интерьера
+              
+        #interior__gallery.interior__gallery.gallery
+          
+          // Slider main container
+          .swiper-container
+            // Additional required wrapper
+            .swiper-wrapper
+              // Slides
+              .swiper-slide
+                .interior__img
+                  a(href="./img/interior-gallery-1.png").gallery-item
+                    img(src="./img/interior-gallery-1.png", alt="").img-responsive
+              .swiper-slide
+                .interior__img
+                  a(href="./img/interior-gallery-2.png").gallery-item
+                    img(src="./img/interior-gallery-2.png", alt="").img-responsive
+              .swiper-slide
+                .interior__img
+                  a(href="./img/interior-gallery-3.png").gallery-item
+                    img(src="./img/interior-gallery-3.png", alt="").img-responsive
+              .swiper-slide
+                .interior__img
+                  a(href="./img/interior-gallery-4.png").gallery-item
+                    img(src="./img/interior-gallery-4.png", alt="").img-responsive
+              .swiper-slide
+                .interior__img
+                  a(href="./img/interior-gallery-5.png").gallery-item
+                    img(src="./img/interior-gallery-5.png", alt="").img-responsive
+              .swiper-slide
+                .interior__img
+                  a(href="./img/interior-gallery-1.png").gallery-item
+                    img(src="./img/interior-gallery-5.png", alt="").img-responsive
+              .swiper-slide
+                .interior__img
+                  a(href="./img/interior-gallery-2.png").gallery-item
+                    img(src="./img/interior-gallery-5.png", alt="").img-responsive
+                  
+          // If we need scrollbar
+          .interior__gallery-scroll
+            .interior__gallery-scroll-wrapper
+              .swiper-scrollbar
+    
+      // Section
+      .section.comment
+        .container
+                
+          .section__head
+            div
+              .h1 Отзывы
+          
+          .section__content.section__content--comment
+            img(src="./img/comment-widget.png", alt="").img-responsive
+              
+          .clear40
+          .text-center
+            a(href="#!").btn.btn--border Оставить отзыв на tripadvisor
+    
+      // Section
+      .section.contacts.no--p
+        #map_canvas.contacts__map
+          
+        .container
+          .contacts__info
+            .h1 Контакты
+            
+            table.table
+              tr
+                td
+                  i.fa.fa-map-marker
+                td г. Харьков, пер. Костюринский 2 ТРЦ Palladium
+              tr
+                td
+                  i.fa.fa-phone
+                td +38 (057) 731-10-02
+              tr
+                td
+                  i.fa.fa-phone
+                td +38 (050) 344-29-15
+              tr
+                td
+                  i.fa.fa-clock-o
+                td Режим работы: 24/7
+              tr.visible-xs
+                td(colspan="2").text-left
+                  a(href="#!" target="_blank").color.color--primary Посмотреть на карте
+                
+          // Google Map
+          script(src='https://maps.googleapis.com/maps/api/js?sensor=false')
+          script.
+            function initialize() {
+              var myLatlng = new google.maps.LatLng(49.9877839,36.2340847);
+              var map_options = {
+                zoom: 16,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                center: myLatlng,
+                scrollwheel: false,
+                disableDefaultUI: true
+              }
+              var map = new google.maps.Map(document.getElementById('map_canvas'), map_options)
+              var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map
+              });
+              /* Remove if you dont want B/W Google Map */
+              /*
+              var styles = [
+              {
+              featureType: "all",
+              stylers: [
+              { saturation: -100 }
+              ]
+              }
+              ];
+              map.setOptions({styles: styles});
+              */
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+          // Google Map Ends!
+
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    include ./_include/_js-body-bottom
